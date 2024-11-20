@@ -5,7 +5,7 @@ spring:
     name: hmdp
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/hmdp?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://127.0.0.1:3306/hmdp?useSSL=false&serverTimezone=UTC
     username: root
     password: 123456
   redis:
@@ -25,3 +25,5 @@ mybatis-plus:
 logging:
   level:
     com.hmdp: debug
+  pattern:
+    dateformat: mm:ss.SSS
